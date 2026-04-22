@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Gantry Analytics — Turn toll infrastructure into a speed enforcement engine</title>
+<meta name="description" content="Gantry Analytics uses existing toll gantry data to enforce average speed limits — saving lives, generating revenue, and extending enforcement capacity for state DOTs and highway patrol agencies." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- Top red accent bar (matches presentation) -->
+<div class="top-bar"></div>
+
+<!-- Nav -->
+<header class="site-header">
+  <div class="container nav">
+    <a href="#top" class="brand">
+      <span class="brand-mark">GA</span>
+      <span class="brand-text">
+        <span class="brand-name">GANTRY</span>
+        <span class="brand-sub">ANALYTICS</span>
+      </span>
+    </a>
+    <nav class="nav-links">
+      <a href="#what">What we do</a>
+      <a href="#who">Who it's for</a>
+      <a href="#stats">By the numbers</a>
+      <a href="#demo">See it live</a>
+      <a href="#contact" class="cta-link">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- Hero -->
+<section id="top" class="hero">
+  <div class="container hero-inner">
+    <p class="eyebrow">Average speed enforcement. Built on infrastructure you already own.</p>
+    <h1>
+      Every toll gantry is a<br />
+      <span class="accent">speed enforcement asset.</span>
+    </h1>
+    <p class="lede">
+      Gantry Analytics turns the license-plate reads you already collect at toll points
+      into a civil, automated, average-speed enforcement system. No new cameras. No new
+      roadside hardware. Just safer roads and funded troopers.
+    </p>
+    <div class="hero-ctas">
+      <a href="#demo" class="btn btn-primary">See the platform</a>
+      <a href="#contact" class="btn btn-ghost">Talk to us</a>
+    </div>
+    <div class="accent-line"></div>
+  </div>
+</section>
+
+<!-- Stats -->
+<section id="stats" class="stats">
+  <div class="container">
+    <h2 class="section-title light">The enforcement gap is measurable.</h2>
+    <div class="stat-grid">
+      <div class="stat">
+        <div class="stat-num">9,100+</div>
+        <div class="stat-label">Speeders per day passing NC toll gantries with zero consequence</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">3.3M</div>
+        <div class="stat-label">Uncaught speeders on NC toll corridors every year</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">20&ndash;37<span class="pct">%</span></div>
+        <div class="stat-label">NHTSA-documented reduction in fatal and injury crashes where average-speed enforcement is deployed</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">48<span class="pct">%</span></div>
+        <div class="stat-label">Drop in speeding within two months of activation, per international field data</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">285</div>
+        <div class="stat-label">Highway Patrol trooper vacancies in North Carolina alone</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">$27M</div>
+        <div class="stat-label">Projected annual moderate-case revenue on NC toll corridors &mdash; enough to fund 380+ new troopers</div>
+      </div>
+    </div>
+    <p class="footnote">
+      Sources: NCDOT 2023 Crash Facts, NHTSA FARS, FHWA Proven Safety Countermeasures,
+      NSW Australia &amp; UK average-speed enforcement field data.
+    </p>
+  </div>
+</section>
+
+<!-- What we do -->
+<section id="what" class="what">
+  <div class="container">
+    <h2 class="section-title">What we do</h2>
+    <p class="section-lede">
+      We turn the plate-and-timestamp data already being captured at toll gantries into
+      a defensible, court-ready civil citation pipeline. One platform. Three moving parts.
+    </p>
+
+    <div class="step-grid">
+      <div class="step">
+        <div class="step-num">01</div>
+        <h3>Capture</h3>
+        <p>
+          We read from your existing toll transaction stream. Entry gantry, exit gantry,
+          timestamp, plate. Nothing new goes on the road.
+        </p>
+      </div>
+      <div class="step">
+        <div class="step-num">02</div>
+        <h3>Calculate</h3>
+        <p>
+          Our engine computes average speed between any two instrumented points, applies
+          your agency's tolerance (e.g. 15+ mph over the posted limit), and deduplicates
+          repeat transits so a single trip never generates double citations.
+        </p>
+      </div>
+      <div class="step">
+        <div class="step-num">03</div>
+        <h3>Cite</h3>
+        <p>
+          Violations route through a review queue, generate a civil citation packet tied
+          to the registered owner, and get mailed automatically. Full audit trail,
+          full officer override, full transparency.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Who -->
+<section id="who" class="who">
+  <div class="container">
+    <h2 class="section-title light">Who we build it for</h2>
+    <div class="who-grid">
+      <div class="who-card">
+        <div class="who-icon">DOT</div>
+        <h3>State Departments of Transportation</h3>
+        <p>
+          Deploy a Proven Safety Countermeasure (FHWA) without capital spend on new
+          roadside cameras. Use the infrastructure you already built and paid for.
+        </p>
+      </div>
+      <div class="who-card">
+        <div class="who-icon">HP</div>
+        <h3>Highway Patrol &amp; State Police</h3>
+        <p>
+          Extend enforcement to the hours and corridors officers can't cover, so troopers
+          can refocus on impaired driving, crash response, and community presence.
+        </p>
+      </div>
+      <div class="who-card">
+        <div class="who-icon">LEG</div>
+        <h3>Governors' Offices &amp; Legislators</h3>
+        <p>
+          Fund Vision Zero goals with dedicated enforcement revenue. Every dollar routed
+          back to trooper pay, road-safety grants, and public transparency reporting.
+        </p>
+      </div>
+      <div class="who-card">
+        <div class="who-icon">TOLL</div>
+        <h3>Toll Road Authorities</h3>
+        <p>
+          Add a revenue stream and safety story on top of tolling operations you already
+          run. Integration sits on top of existing plate-capture hardware.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Demo -->
+<section id="demo" class="demo">
+  <div class="container">
+    <h2 class="section-title">See it in motion</h2>
+    <p class="section-lede">
+      A thirty-second walkthrough of the operator console: queueing toll transactions,
+      running the speed engine, reviewing violations, and routing citations to the field.
+    </p>
+
+    <div class="video-frame">
+      <video id="walkthrough-video" autoplay loop muted playsinline preload="auto" poster="walkthrough-poster.jpg">
+        <source src="walkthrough.mp4" type="video/mp4" />
+        <source src="walkthrough.webm" type="video/webm" />
+        Your browser can't play the walkthrough. <a href="walkthrough.mp4">Download the MP4</a>.
+      </video>
+    </div>
+
+    <div class="demo-beats">
+      <div class="beat"><span class="beat-num">1</span>Dashboard &mdash; live system state, queued transactions, violations issued.</div>
+      <div class="beat"><span class="beat-num">2</span>Process &mdash; one click runs the speed engine across queued toll reads.</div>
+      <div class="beat"><span class="beat-num">3</span>Violations log &mdash; every cited vehicle, entry/exit points, computed speed.</div>
+      <div class="beat"><span class="beat-num">4</span>Officer citations &mdash; review, approve, or override. Full audit trail.</div>
+      <div class="beat"><span class="beat-num">5</span>Email log &mdash; the citation packet that gets mailed to the registered owner.</div>
+    </div>
+
+    <p class="demo-note">
+      Want to click through it yourself? <a href="demo/index.html">Open the live demo &rarr;</a>
+    </p>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="contact">
+  <div class="container contact-inner">
+    <h2 class="section-title light">Ready to talk?</h2>
+    <p class="section-lede">
+      We work with DOTs, highway patrol agencies, and toll authorities evaluating
+      average-speed enforcement. Reach out and we'll send a tailored briefing.
+    </p>
+    <a href="mailto:hello@gantryanalytics.com" class="btn btn-primary large">hello@gantryanalytics.com</a>
+    <div class="accent-line"></div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <span class="brand-mark small">GA</span>
+      <span>Gantry Analytics</span>
+    </div>
+    <div class="footer-meta">
+      &copy; <span id="year"></span> Gantry Analytics. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Force walkthrough video to autoplay on loop, with fallbacks.
+  (function () {
+    var v = document.getElementById('walkthrough-video');
+    if (!v) return;
+
+    // Force the muted/loop/inline state (some browsers ignore attributes if JS removes them).
+    v.muted = true;
+    v.loop = true;
+    v.setAttribute('playsinline', '');
+    v.setAttribute('muted', '');
+
+    function tryPlay() {
+      var p = v.play();
+      if (p && typeof p.catch === 'function') {
+        p.catch(function () { /* autoplay blocked — we'll retry on interaction or intersection */ });
+      }
+    }
+
+    // Initial attempt.
+    tryPlay();
+
+    // Retry as soon as the video is ready and whenever it scrolls into view.
+    v.addEventListener('loadeddata', tryPlay);
+    v.addEventListener('canplay', tryPlay);
+
+    // Belt-and-suspenders loop: some mobile browsers ignore the loop attribute on first pass.
+    v.addEventListener('ended', function () {
+      try { v.currentTime = 0; } catch (e) {}
+      tryPlay();
+    });
+
+    // Kick playback when the demo section enters the viewport.
+    if ('IntersectionObserver' in window) {
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) { if (e.isIntersecting) tryPlay(); });
+      }, { threshold: 0.1 });
+      io.observe(v);
+    }
+
+    // Last resort: first user interaction unlocks playback on browsers that block autoplay entirely.
+    var unlock = function () {
+      tryPlay();
+      window.removeEventListener('scroll', unlock);
+      window.removeEventListener('click', unlock);
+      window.removeEventListener('touchstart', unlock);
+      window.removeEventListener('keydown', unlock);
+    };
+    window.addEventListener('scroll', unlock, { passive: true, once: true });
+    window.addEventListener('click', unlock, { once: true });
+    window.addEventListener('touchstart', unlock, { once: true });
+    window.addEventListener('keydown', unlock, { once: true });
+  })();
+</script>
+
+</body>
+</html>
