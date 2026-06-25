@@ -70,9 +70,8 @@ If GitHub Pages reports the custom domain as unverified, follow the verification
 Website/
 ├── index.html                 Landing page
 ├── style.css                  Styles (Montserrat + presentation palette)
-├── walkthrough.mp4            Demo walkthrough recording (autoplay, loop, muted)
-├── walkthrough.webm           Same video, alternate codec
-├── walkthrough-poster.jpg     Poster frame shown before video loads
+├── gantry-platform.mp4        Platform demo video (autoplay, loop, muted)
+├── gantry-platform.webm       Same video, alternate codec
 ├── demo/                      Full interactive demo site (linked from landing page)
 └── DEPLOY.md                  This file
 ```
