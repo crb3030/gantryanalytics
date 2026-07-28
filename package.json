@@ -1,0 +1,13 @@
+{
+  "name": "gantryanalytics-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Tooling for gantryanalytics.com. The site itself is plain HTML/CSS with no build step; this manifest exists only for the walkthrough recording script.",
+  "type": "module",
+  "scripts": {
+    "record-walkthrough": "node scripts/record-walkthrough.mjs"
+  },
+  "devDependencies": {
+    "playwright": "^1.62.0"
+  }
+}

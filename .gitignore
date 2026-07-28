@@ -1,0 +1,13 @@
+# Local-only backup of the pre-swap walkthrough video — never commit
+_old_walkthrough_backup/
+
+# macOS / Google Drive cruft
+.DS_Store
+.fuse_hidden*
+
+# Local copy-update instructions, not site content
+SITE_COPY_UPDATE_PROMPTS.md
+
+# Walkthrough recording tooling (scripts/record-walkthrough.mjs)
+node_modules/
+.recording-raw/

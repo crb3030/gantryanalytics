@@ -70,12 +70,42 @@ If GitHub Pages reports the custom domain as unverified, follow the verification
 Website/
 ├── index.html                 Landing page
 ├── style.css                  Styles (Montserrat + presentation palette)
-├── gantry-platform.mp4        Platform demo video (autoplay, loop, muted)
+├── gantry-platform.mp4        Platform walkthrough video (autoplay, loop, muted)
 ├── gantry-platform.webm       Same video, alternate codec
+├── scripts/
+│   └── record-walkthrough.mjs Re-records the walkthrough video from the live demo
+├── package.json               Dev dependency for the recording script only
 ├── demo/                      Full interactive demo site (linked from landing page)
 └── DEPLOY.md                  This file
 ```
 
 The landing page hero, stats, what-we-do, who-it's-for, and demo sections all pull from the presentation you've been building. Update copy directly in `index.html` — there's no build step, it's just HTML/CSS.
 
-To re-record the walkthrough after you update the demo, re-run the Playwright recording flow from our working folder (or ask me to regenerate it).
+## Re-recording the walkthrough video
+
+`scripts/record-walkthrough.mjs` is the way to regenerate the "See it in motion"
+video after the demo changes. It drives https://demo.gantryanalytics.com in headless
+Chromium, records a 1440x810 / ~30 second pass over Dashboard, Insights, and Settings,
+and overwrites `gantry-platform.mp4` and `gantry-platform.webm` in place.
+
+One time setup (needs [ffmpeg](https://ffmpeg.org) on your PATH — `brew install ffmpeg`):
+
+```bash
+npm install && npx playwright install chromium
+```
+
+Then, from this folder:
+
+```bash
+npm run record-walkthrough
+```
+
+The run is read only — it navigates via the top nav links and never clicks Process,
+Save, Export, or anything else that would mutate the live demo. Timings and scroll
+targets live at the top of the script; adjust them there if the demo's page layout
+shifts. Set `KEEP_RAW=1` to keep the raw capture so you can retune the ffmpeg encode
+without re-recording.
+
+Because the two filenames never change, bump the `?v=` cache buster on both `<source>`
+tags in `index.html` after each re-record, or returning visitors and the GitHub Pages
+CDN will keep serving the old video.
